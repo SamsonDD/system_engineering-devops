@@ -1,14 +1,5 @@
-# System Engineering DevOps Project
-
-This repository contains various shell scripting projects and exercises.
-
-## Directories
-
-- 0x00-shell_basics: Basic shell scripts and commands
-- 0x01-shell_permissions: Shell permissions and user management scripts
-
-## Scripts
-
-- 0-iam_betty: Switch user to betty
 #!/bin/bash
-pwd
+This repository contains multiple folders for shell scripting projects:
+
+- 0x00-shell_basics: Basic shell commands and scripts.
+- 0x01-shell_permissions: Scripts related to user permissions and management

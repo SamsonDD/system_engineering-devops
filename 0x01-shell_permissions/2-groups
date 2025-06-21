@@ -1,2 +1,2 @@
 #!/bin/bash
-id -un | xargs groups
+groups $USER

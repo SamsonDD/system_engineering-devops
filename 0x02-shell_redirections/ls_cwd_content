@@ -1,0 +1,14 @@
+total 48
+drwxr-xr-x 2 samsondd samsondd 4096 Jul  6 17:17 .
+drwxr-xr-x 7 samsondd samsondd 4096 Jul  6 16:50 ..
+-rwxr-xr-x 1 samsondd samsondd   32 Jul  6 16:50 0-hello_world
+-rwxr-xr-x 1 samsondd samsondd   28 Jul  6 16:50 1-confused_smiley
+-rwxr-xr-x 1 samsondd samsondd   28 Jul  6 16:50 2-hellofile
+-rwxr-xr-x 1 samsondd samsondd   39 Jul  6 16:54 3-twofiles
+-rwxr-xr-x 1 samsondd samsondd   35 Jul  6 17:05 4-lastlines
+-rwxr-xr-x 1 samsondd samsondd   35 Jul  6 17:07 5-firstlines
+-rw-r--r-- 1 samsondd samsondd   40 Jul  6 17:08 6-third_line
+-rw-r--r-- 1 samsondd samsondd   48 Jul  6 17:15 7-file
+-rwxr-xr-x 1 samsondd samsondd   36 Jul  6 17:17 8-cwd_state
+-rwxr-xr-x 1 samsondd samsondd   16 Jul  6 16:50 README.md
+-rw-r--r-- 1 samsondd samsondd    0 Jul  6 17:17 ls_cwd_content

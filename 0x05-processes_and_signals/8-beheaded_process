@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Forcefully kills 7-highlander using SIGKILL (signal 9)
+
+pid=$(pgrep -f 7-highlander)
+
+if [ -n "$pid" ]; then
+  builtin kill -9 "$pid"
+  exit 2
+else
+  exit 0
+fi

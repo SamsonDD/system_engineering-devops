@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
-# A Bash script that displays all running processes in a hierarchical, user-oriented format
+#!/bin/bash
+# Display all running processes with the correct format and hierarchy
 
-ps -eo user,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,cmd --forest
+ps -eo user,pid,pcpu,pmem,vsz,rss,tty,stat,lstart,time,cmd --forest \
+| awk 'NR==1 { $6="STARTED"; $11="CMD"; print } NR>1 { print }'

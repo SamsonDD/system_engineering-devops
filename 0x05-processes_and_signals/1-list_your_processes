@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Display all processes from all users in a tree-like format
+# This script displays all running processes with user, status, CPU time, and command
 
-ps -eo user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --forest
+ps -eo user,stat,time,cmd

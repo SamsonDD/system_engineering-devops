@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script displays a list of all users who own running processes
+# Script to list all running processes with hierarchy and detailed info
 
-ps -eo user --no-headers | sort | uniq
+ps aux --forest

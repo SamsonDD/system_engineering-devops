@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Display all running processes with the correct format and hierarchy
 
 ps -eo user,pid,pcpu,pmem,vsz,rss,tty,stat,lstart,time,cmd --forest \

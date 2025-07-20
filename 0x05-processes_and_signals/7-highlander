@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
-# Infinite loop printing a message; on SIGTERM prints "I am invincible!!!"
-# On SIGINT (Ctrl+C), exit gracefully
+# Find 7-highlander PID(s) and send SIGTERM to them
 
-trap 'echo "I am invincible!!!"' SIGTERM
-trap 'echo "Exiting..."; exit 0' SIGINT
+pids=$(pgrep -f './7-highlander')
 
-while true; do
-  echo "To infinity and beyond"
-  sleep 2
+if [[ -z "$pids" ]]; then
+  echo "No 7-highlander process found."
+  exit 1
+fi
+
+for pid in $pids; do
+  kill -TERM "$pid"
 done

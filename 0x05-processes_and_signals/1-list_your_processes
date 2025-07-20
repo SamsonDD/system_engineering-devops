@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Displays all processes with user, full start time, and command
+# Display all processes from all users in a tree-like format
 
-ps -eo user,lstart,cmd --no-headers | awk '{
-    printf "%s %s %s %s %s %s\n", $1, $2, $3, $4, $5, substr($0, index($0,$7))
-}'
+ps -eo user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --forest

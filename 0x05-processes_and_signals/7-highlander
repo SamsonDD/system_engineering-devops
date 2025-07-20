@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Infinite loop printing a message; on SIGTERM prints "I am invincible!!!"
+# On SIGINT (Ctrl+C), exit gracefully
 
 trap 'echo "I am invincible!!!"' SIGTERM
+trap 'echo "Exiting..."; exit 0' SIGINT
 
 while true; do
   echo "To infinity and beyond"

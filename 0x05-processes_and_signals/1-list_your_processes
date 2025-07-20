@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script displays all running processes with user, status, CPU time, and command
+# This script displays a list of all users who own running processes
 
-ps -eo user,stat,time,cmd
+ps -eo user --no-headers | sort | uniq

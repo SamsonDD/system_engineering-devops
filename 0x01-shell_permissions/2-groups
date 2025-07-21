@@ -1,0 +1,5 @@
+#!/bin/bash
+# 2-groups
+
+# Print all groups the current user is part of
+groups $USER
